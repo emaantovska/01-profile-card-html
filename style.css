@@ -1,5 +1,17 @@
 body {
   background-color: #add8e6; /* light blue */
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.profile-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-width: 350px;
+  margin: 60px auto;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
 }
 
 h1, h2 {
@@ -8,7 +20,7 @@ h1, h2 {
 
 h1 {
   font-size: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
   color: #003366; /* dark blue */
 }
 
@@ -21,4 +33,35 @@ h2 {
 p {
   font-size: 1.2rem;
   line-height: 1.6;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;           /* Remove bullet points */
+  padding: 0;                 /* Remove default padding */
+  margin: 1.5rem 0 0 0;       /* Add space above the list */
+}
+
+ul li {
+  margin-bottom: 0.7rem;      /* Add space between list items */
+}
+
+ul li a {
+  text-decoration: none;      /* Remove underline from links */
+  color: #003366;             /* Match heading color */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+ul li a:hover {
+  color: #001f4d;             /* Slightly darker on hover */
+}
+
+.profile-card img {
+  width: 80px;                /* Resize image to fit card */
+  height: 80px;
+  object-fit: cover;          /* Crop image to fit */
+  border-radius: 50%;         /* Make image circular */
+  margin-bottom: 1rem;        /* Space below image */
+  margin-top: 0.5rem;         /* Space above image */
 }
